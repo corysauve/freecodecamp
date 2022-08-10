@@ -1,0 +1,98 @@
+## Scientific Computing with Python Notes 
+### Chapter 2: Variables, Expressions, and Statements 
+
+### Constants 
+
+- Fixed values (constants)
+    - Value does not change (e.g., numbers, letters, and strings)
+    - String constants use single of double quotes 
+
+- Reserved words 
+    - You cannot use reserved words as variables names/identifiers 
+    - e.g., `For`, `IF`
+
+- Variables 
+    - Variable is a named place in the memory where a programmer can store data 
+    and later retrieve the data using the variable name 
+    - Can change the contents of a variable in a later statement 
+
+- Variable name rules 
+    - Must start with a letter or underscore 
+    - Must consist of letters, numbers, and underscores 
+    - Case sensitive 
+
+- Assignment statements 
+    - Used to assign a value to a variable (`=`)
+
+### Intermediate Expressions 
+
+- Numeric expressions 
+    - Addition = `+`
+    - Subtraction = `-`
+    - Multiplication = `*`
+    - Division = `/`
+    - Power = `**`
+    - Remainder = `%`
+
+- Order of evaluation 
+    - Called operator precedence 
+    - Order 
+        - Parentheses are always respected 
+        - Exponentiation 
+        - Multiplication, division, and remainder 
+        - Addition and subtraction 
+        - Left to right 
+
+- Types 
+    - Variables, literals, and constants have a type 
+
+- Types of numbers 
+    - Integers = whole numbers 
+    - Floating point numbers = have decimal parts 
+
+- Type conversions 
+    - Convert types w/
+        - `int()`
+        - `float()`
+            ```p
+            print(float(99) + 100)
+            ```
+
+- Integer division 
+    - Integer division always produces a floating point result 
+    ```p
+    print(10 / 2)
+    ```
+    
+- String conversions 
+    - You can use `int()` and `float()` to convert between strings and integers 
+    - An error will occur if the string does not contain numeric characters 
+    - Example
+    ```p
+    sval = '123'
+    ival = int(sval)
+    type(ival)
+    print(ival + 1)
+    ```
+
+- User input 
+    - Can instruct Python to pause and read data from the user using the `input()` function 
+        - `input()` function returns a string 
+        ```p
+        nam = input('Who are you? ')
+        print('Welcome', nam)
+        ```
+
+- Converting user input 
+    - If we want ot read a number from the user, we must convert it from a string to 
+    a number using a type conversion function 
+    - Elevator floor conversion 
+    ```p
+    inp = input('Europe floor?')
+    usf = int(inp) + 1
+    print('US floor', usf)
+    ```
+
+- Comments in python 
+    - Another with a `#` is ignored by Python 
+
